@@ -80,11 +80,11 @@ section {
 
 .contenedor-principal {
 
-    margin: 7rem 2rem 1rem 3rem;
+    margin: 3.5rem 2rem 1rem 3rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 3.5rem;
+    gap: 4.5rem;
 }
 
 
@@ -97,8 +97,8 @@ section {
 
 .descripcion-producto h1 {
 
-    margin-bottom: 4rem;
-    font-size: 4.5rem;
+    margin-bottom: 3rem;
+    font-size: 4rem;
     font-weight: 500;
     font-family: 'Poppins', 'Courier New', Courier, monospace;
 }
@@ -109,10 +109,21 @@ section {
 
 }
 
+.imagen{
+    background-color: #203833;
+    padding: 3rem;
+    border-radius: 50%;
+    height: 100%;
+    width: 450px;
+    text-align: center;
+}
+
 .imagen img {
+    
     flex: 1;
-    height: 550px;
+    height: 350px;
     box-sizing: border-box;
+
 }
 
 .redes-sociales {
@@ -136,7 +147,6 @@ section {
 .footer {
 
     position: fixed;
-    width: 390px;
     left: 50%;
     bottom: 0px;
     padding: 20px;
@@ -145,13 +155,19 @@ section {
     box-sizing: border-box;
     overflow-x: auto; 
     white-space: nowrap;
+    filter: drop-shadow(4px 4px 16px rgba(255, 255, 255, 0.9));
 }
 
 .footer a {
     margin-left: 1.5rem;
+    
 }
 
 .footer img {
+    background-color: #203833;
+    border-radius: 50%;
+    padding-block: 1px;
+    padding-inline: 15px;
     height: 6rem;
 }
 
@@ -225,9 +241,9 @@ section {
         position: fixed;
         left: 50%;
         bottom: 0px;
-        padding-inline: 20px;
+        padding: 20px;
         transform: translateX(-50%);
-        background-color: #ffffff88;
+        filter: drop-shadow(4px 4px 16px rgba(255, 255, 255, 0.9));
     }
 
     .footer a {
@@ -236,7 +252,7 @@ section {
 
     .imagen img {
 
-        height: 400px;
+        height: 350px;
     }
 
     .footer img {
@@ -272,20 +288,25 @@ section {
 
     .footer {
         
-        width: 250px;
         position: fixed;
         left: 50%;
         bottom: 0px;
+        padding: 20px;
         transform: translateX(-50%);
+        filter: drop-shadow(4px 4px 16px rgba(255, 255, 255, 0.9));
     }
 
     .footer a {
         margin-left: 1rem;
     }
 
+    .imagen{
+        max-width: 400px;
+        background-color: none;
+    }
     .imagen img {
-
-        height: 300px;
+        height: 250px;
+        margin: 0;
     }
 
     .footer img {
